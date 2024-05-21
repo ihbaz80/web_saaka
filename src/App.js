@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
-
+//import Header from './components/Header/Header';
+import LoginForm from './components/LoginForm/LoginForm';
+import Home from './components/Home/Home';
+import About from './components/About/About';
+import Contact from './components/Contact/Contact';
+import Admin from './components/Admin/Admin';
+import PrivateRoute from './utils/PrivateRoute';
+import {Route, Routes} from 'react-router-dom';
+import AlertComponent from './components/AlertComponent/AlertComponent';  
 function App() {
+  const [title, updateTitle] = useState(null);
+  const [errorMessage, updateErrorMessage] = useState(null);
+
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <Routes>
+          <Route path="/" element={<Home></Home>}></Route>
+          <Route path="/about" element={<About></About>}></Route>
+          <Route path="/contact" element={<Contact></Contact>}></Route>
+        </Routes>
+          <AlertComponent errorMessage={errorMessage} hideError={updateErrorMessage}/>
     </div>
   );
 }
