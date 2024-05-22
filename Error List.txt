@@ -1,0 +1,7 @@
+
+returncode: 254
+stdout:
+> SAAKA JOHOR@0.1.0 start
+> npm run start
+stderr:
+/home/saakajoh/nodevenv/public_html/saaka/w1/18/bin/npm: fork: Cannot allocate memory
