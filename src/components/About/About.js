@@ -10,7 +10,7 @@ import { padding } from '@mui/system'
              <div style={{ backgroundColor:'#04125E'}}>
                 <NavBar></NavBar>
        </div>
-       <div className='flex hero-area'>
+       <div className='flex hero-area'><br></br><br></br>
        <center><img src={pic} alt="pic" width="1100px" height="400px" /></center>
        <div style={{paddingTop: '30px', margin:'50px'}}>
         <h1>About Us</h1>

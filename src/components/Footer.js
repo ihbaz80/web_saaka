@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -63,15 +64,9 @@ const Footer = () => {
               Links
             </h4>
             <div className="info_links">
-              <a className="active" href="index.html">
-                Home
-              </a>
-              <a className="" href="about.html">
-                About
-              </a>
-              <a className="" href="contact.html">
-                Contact
-              </a>
+            <Link className="nav-link"  to="/">Home</Link>
+            <Link className="nav-link" to="/about">About</Link>
+            <Link className="nav-link" to="/contact">Contact</Link>
             </div>
           </div>
         </div>
@@ -92,7 +87,7 @@ const Footer = () => {
         <section className="footer_section">
     <div className="container">
       <p>
-        &copy; <span id="displayYear"></span> All Rights Reserved By
+        &copy; <span id="displayYear"></span> All Rights Reserved By&nbsp;
         <a href="https://www.saakajohor.com">Uni-Technologies Sdb. Bhd. and Universiti Teknologi Malaysia</a>
       </p>
     </div>
