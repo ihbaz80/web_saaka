@@ -27,6 +27,7 @@ import React from 'react';
 import NavBar from '../NavBar';
 import Footer from '../Footer';
 import Guide from '../Guide/Guide';
+import RGBColorReader from '../RGBColorReader';
 
 
 function Home() {
@@ -48,6 +49,11 @@ function Home() {
 
   return (
    <div>
+    <RGBColorReader location="Gunung Pulai" point="Station P1" pointX={458} pointY={400} ></RGBColorReader>
+    <RGBColorReader location="Gunung Pulai" point="Station P2" pointX={457} pointY={398} ></RGBColorReader>
+    <RGBColorReader location="Gunung Pulai" point="Station B1" pointX={429} pointY={395} ></RGBColorReader>
+    <RGBColorReader location="Gunung Pulai" point="Station B2" pointX={432} pointY={397} ></RGBColorReader>
+    
        <CssBaseline /> 
        <div style={{ backgroundColor:'#04125E'}}>
                 <NavBar></NavBar>
