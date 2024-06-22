@@ -96,6 +96,7 @@ import {
     let L5_max_wl=0
 
     if (props.loc==="Gunung Pulai"){
+      //rain rate
       L1_min_mm=16.2
       L2_min_mm= L1_min_mm
       L2_max_mm=26.5
@@ -105,6 +106,7 @@ import {
       L4_max_mm=41.1
       L5_max_mm=L4_max_mm
 
+      //water level
       L1_min_wl=1.0
       L2_min_wl=L1_min_mm
       L2_max_wl=1.53
@@ -114,6 +116,7 @@ import {
       L4_max_wl=2.37
       L5_max_wl=L4_max_mm
     }else if (props.loc==="Gunung Berlumut"){
+      //water level
       L1_min_mm=11.4
       L2_min_mm= L1_min_mm
       L2_max_mm=35.1
@@ -123,6 +126,7 @@ import {
       L4_max_mm=43.9
       L5_max_mm=L4_max_mm
 
+      //rain rate
       L1_min_wl=0.46
       L2_min_wl=L1_min_mm
       L2_max_wl=1.10

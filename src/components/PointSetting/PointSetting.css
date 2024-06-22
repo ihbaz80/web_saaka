@@ -1,0 +1,11 @@
+.mainwrapper {
+    display: table;
+}
+
+.itemwrapper {
+    display: table-row;
+}
+
+.picture, .item {
+    display: table-cell;
+}

@@ -16,7 +16,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 ///import CustomSlider from "../components/slider/custom.slider";
 import "../../App.css";
 import "../../bootstrap.css";
-import UniWeatherCard from '../UniWeatherCard/UniWeatherCard';
+import UniWeatherCard from '../../components/UniWeatherCard/UniWeatherCard';
 //import Divider from '@mui/material/Divider';
 //import Avatar from '@mui/material/Avatar';
 //import Stack from '@mui/material/Stack';
@@ -24,10 +24,10 @@ import { ACCESS_TOKEN_NAME, API_BASE_URL } from '../../constants/apiConstants';
 import Axios from 'axios';
 import { useEffect } from 'react';
 import React from 'react';
-import NavBar from '../NavBar';
-import Footer from '../Footer';
-import Guide from '../Guide/Guide';
-import RGBColorReader from '../RGBColorReader';
+import NavBar from '../../components/NavBar';
+import Footer from '../../components/Footer';
+import Guide from '../../components/Guide/Guide';
+import RGBColorReader from '../../components/RGBColorReader';
 
 
 function Home() {

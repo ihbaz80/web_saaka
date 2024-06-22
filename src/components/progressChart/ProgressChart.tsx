@@ -1,4 +1,6 @@
 
+import React from 'react';
+
 export const ProgressChart = (props: {threshold:number}) => {
     let color="Silver"
     let riskStatus=""

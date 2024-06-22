@@ -1,7 +1,7 @@
 import React from 'react'
-import NavBar from '../NavBar'
+import NavBar from '../../components/NavBar'
 import pic from '../../images/server-room.jpg'
-import Footer from '../Footer'
+import Footer from '../../components/Footer'
 //import { padding } from '@mui/system'
 
  const About = () => {

@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
@@ -43,12 +44,12 @@ const ContactForm = () => {
       };
 
       // Use emailjs to email contact form data
-      await emailjs.send(
-        import.meta.env.VITE_SERVICE_ID,
-        import.meta.env.VITE_TEMPLATE_ID,
-        templateParams,
-        import.meta.env.VITE_PUBLIC_KEY,
-      );
+      // await emailjs.send(
+      //   import.meta.env.VITE_SERVICE_ID,
+      //   import.meta.env.VITE_TEMPLATE_ID,
+      //   templateParams,
+      //   import.meta.env.VITE_PUBLIC_KEY,
+      // );
 
       // Display success alert
       toggleAlert('Form submission was successful!', 'success');
